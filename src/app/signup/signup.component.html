@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>Sign Up Page</title>
+    <style>
+        /* Center content at the top of the page */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            border: 1px solid black; /* Add a border around the container */
+            padding: 20px; /* Add padding inside the border */
+            text-align: center; /* Center the content within the container */
+        }
+
+        /* Underline the heading */
+        h1 {
+            color: darkcyan;
+            text-decoration: underline;
+        }
+        
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .input-label {
+            margin-bottom: 10px;
+            font-weight: bold; /* Make the labels bold */
+        }
+
+        input {
+            width: 200px;
+            padding: 5px;
+        }
+
+        .button {
+            width: 100px;
+            font-weight: bold;
+            margin-top: 10px; /* Move the button slightly down */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+
+        <div class="form-container">
+            <label class="input-label" for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username" />
+
+            <label class="input-label" for="firstname">First Name:</label>
+            <input type="text" id="firstname" placeholder="Enter your first name" />
+
+            <label class="input-label" for="lastname">Last Name:</label>
+            <input type="text" id="lastname" placeholder="Enter your last name" />
+
+            <label class="input-label" for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" />
+
+            <button class="button" id="signup">Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>

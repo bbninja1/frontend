@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .button-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .button-label {
+            margin-right: 10px; 
+            text-decoration: underline;
+        }
+
+        .button-label strong {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        h1 {
+            color: darkcyan;
+            text-decoration: underline;
+        }
+
+        button {
+            width: 80px;
+            font-weight: bold;
+        }
+
+        .login-container {
+            margin-bottom: 10px;
+        }
+
+        .sign-up-container {
+            margin-left: -5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Home Page</h1>
+
+    <div class="button-container login-container">
+        <label class="button-label" for="btnLogin"><strong>Login:</strong></label>
+        <button id="btnLogin">Login</button>
+    </div>
+    
+    <div class="button-container sign-up-container">
+        <label class="button-label" for="btnSignIn"><strong>SignUp:</strong></label>
+        <button id="btnSignIn">Sign Up</button>
+    </div>
+</body>
+</html>
