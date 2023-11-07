@@ -1,1 +1,26 @@
-<p>posts works!</p>
+<form (submit) = "AddPost(AddPostForm)" #AddPostForm = "ngForm">
+
+    <input type = "text"
+    ngModel name = "enteredtitle"
+    placeholder="title"
+    required
+    minlength="1"
+    #enteredtitle = "ngModel"/>
+
+    <input type = "text" 
+    ngModel name = "entereddescription"
+    placeholder="description"
+    required
+    minlength="1"
+    #entereddescription= "ngModel"/>
+
+    <input type = "text" 
+    ngModel name = "entereddepartmentcode"
+    placeholder="departmentcode"
+    required
+    minlength="1"
+    #entereddepartmentcode = "ngModel"/>
+
+    <button type = "submit"> Create Post </button>
+    <button routerLink="/app-displayposts">Display Posts</button>
+</form>

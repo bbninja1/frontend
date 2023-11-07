@@ -1,5 +1,71 @@
-<app-home></app-home>
-<hr>
-<app-signup></app-signup>
-<hr>
-<app-login></app-login> 
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        div {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        nav {
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 8px 12px;
+            margin: 0 5px;
+            border-radius: 3px;
+            background-color: #3498db;
+            color: #fff;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #2980b9;
+        }
+
+        router-outlet {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Welcome</h1>
+            <nav>
+                <a routerLink="/app-signup">Sign Up</a>
+                <a routerLink="/app-login">Login</a>
+                <a routerLink="/app-posts">Posts</a>
+                <a routerLink="/app-displayposts">Displayed Posts</a>
+            </nav>
+
+            <router-outlet></router-outlet>
+        </div>
+    </main>
+</body>
+</html>
